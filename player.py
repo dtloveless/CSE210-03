@@ -5,10 +5,12 @@ class player:
         self._past_guess()
     
 
-    def _get_guess(self):
+    def _get_guess(self,playerchoice):
         '''This ask the user to put in a 1 character
         guess into the code and stores that character
         for the dictionary to use'''
+        playerchoice = input("Guess a Letter [a-z]: ")
+        pc = playerchoice.lower
         pass
 
     def _past_guess():

@@ -1,3 +1,4 @@
+from player import Player 
 '''
     Authors: Daniel Loveless, Julie Cowley, 
         Celeste Popoca, Darcy Merilan

@@ -18,4 +18,5 @@ class Player:
         '''This list all the previous inputs that was 
         made by the player, and makes them unable to 
         use them going forward in the game.'''
+        #need to be a list
         pass

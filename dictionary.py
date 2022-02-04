@@ -20,9 +20,11 @@ class Dictionary:
             print('_ ', end= '')
         print('\n') #get an endline after the underscores
 
-test = Dictionary()
-print(f"Current Word: {test.get_word()}")
-test.display_underscores()
 
-print(test.check_guess('f'))
-print(test.check_guess('e'))
+############### TEST CODE ##################
+# test = Dictionary()
+# print(f"Current Word: {test.get_word()}")
+# test.display_underscores()
+
+# print(test.check_guess('f'))
+# print(test.check_guess('e'))

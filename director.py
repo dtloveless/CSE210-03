@@ -1,4 +1,6 @@
-from player import Player 
+from player import Player
+from dictionary import Dictionary
+
 '''
     Authors: Daniel Loveless, Julie Cowley, 
         Celeste Popoca, Darcy Merilan

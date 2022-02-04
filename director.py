@@ -1,5 +1,6 @@
 from player import Player
 from dictionary import Dictionary
+from parachute import p
 
 '''
     Authors: Daniel Loveless, Julie Cowley, 
@@ -10,6 +11,10 @@ class Director:
 
     def __init__(self):
         # create new variables
+        # pastGuesses = []
+        # jumper = Jumper()
+        # dictionary = Dictionary()
+        # player = Player()
         pass
 
     def start_game(self):
@@ -20,10 +25,15 @@ class Director:
 
     def _display_game(self):
         # beginning layout of the game
+        # dictionary.displayUnderscores()
+        # jumper.displayChute()
+
         pass
 
     def _update_game(self):
         # get new values
+        # dictionary.checkGuess()
+        # jumper.update_lives()
         pass
 
     def _end_game(self):

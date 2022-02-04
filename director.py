@@ -5,18 +5,24 @@
 
 class Director:
 
-    def __init__():
+    def __init__(self):
         # create new variables
         pass
 
-    def display_game():
+    def start_game(self):
+        # while loop for playing the game
+        while self._end_game():
+            self._display_game()
+            self._update_game()
+
+    def _display_game(self):
         # beginning layout of the game
         pass
 
-    def update_game():
+    def _update_game(self):
         # get new values
         pass
 
-    def end_game():
+    def _end_game(self):
         # decide whether the game is over
-        pass
+        return False

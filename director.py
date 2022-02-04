@@ -3,8 +3,9 @@ from dictionary import Dictionary
 from parachute import p
 
 '''
-    Authors: Daniel Loveless, Julie Cowley, 
-        Celeste Popoca, Darcy Merilan
+    File: director.py
+    Author: Celeste Popoca
+    Despcription: Contains the director class of the game and 
 '''
 
 class Director:

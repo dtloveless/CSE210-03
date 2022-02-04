@@ -19,4 +19,6 @@ class Player:
         made by the player, and makes them unable to 
         use them going forward in the game.'''
         #need to be a list
+        oldguess = []
+        
         pass

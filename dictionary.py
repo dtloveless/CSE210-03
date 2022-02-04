@@ -1,10 +1,14 @@
+'''
+File: dictionary.py
+Author: Julie Cowley
+Class: CSE 210
+Description: generates a random word for the game
+'''
+
 import random
 
 
 class Dictionary:
-    '''
-    generates a random word for the game
-    '''
 
     def __init__(self):
         words = ['vanish','health','parsimonious','support','kettle','beef','ajar','curious','imagine','shop']
@@ -34,11 +38,3 @@ class Dictionary:
             print('_ ', end= '')
         print('\n') #get an endline after the underscores finish printing
 
-
-############### TEST CODE ##################
-# test = Dictionary()
-# print(f"Current Word: {test.get_word()}")
-# test.display_underscores()
-
-# print(test.check_guess('f'))
-# print(test.check_guess('e'))

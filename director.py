@@ -12,10 +12,10 @@ class Director:
 
     def __init__(self):
         # create new variables
-        # pastGuesses = []
-        # jumper = Jumper()
-        # dictionary = Dictionary()
-        # player = Player()
+        # self.pastGuesses = []
+        # self.jumper = Jumper()
+        # self.dictionary = Dictionary()
+        # self.player = Player()
         pass
 
     def start_game(self):
@@ -39,4 +39,5 @@ class Director:
 
     def _end_game(self):
         # decide whether the game is over
+        # call module 
         return False

@@ -12,10 +12,10 @@ class Director:
 
     def __init__(self):
         '''create new variables'''
-        # self.pastGuesses = []
-        # self.jumper = Jumper()
-        # self.dictionary = Dictionary()
-        # self.player = Player()
+        # self._pastGuesses = []
+        # self._jumper = Jumper()
+        # self._dictionary = Dictionary()
+        # self._player = Player()
         pass
 
     def start_game(self):

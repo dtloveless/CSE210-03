@@ -53,8 +53,7 @@ class Jumper():
                 print(line)
         print('\n^^^^^^^')
         
-        def get_lives(self):
-            ''' Passes the number of lives in the protected variable 'lives_used'
-            '''
-            self.livesUsed = self._lives_used
-            return self.livesUsed
+    def get_lives(self):
+        ''' Passes the number of lives in the protected variable 'lives_used'
+        '''
+        return self._lives_used

@@ -5,7 +5,8 @@ from jumper import Jumper
 '''
     File: director.py
     Author: Celeste Popoca
-    Despcription: Contains the director class of the game and 
+    Description: Contains the director class of the game and executes the 
+    other classes' modules.
 '''
 
 class Director:
@@ -37,7 +38,6 @@ class Director:
         '''
         self._dictionary.checkGuess()
         self._jumper.update_lives()
-        pass
 
     def _end_game(self):
         ''' Decide whether the game is over according to # of lives

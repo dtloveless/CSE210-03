@@ -5,7 +5,7 @@ class Player:
         self._past_guess()'''
         self._pastguess=[]
     
-    
+
     def _playerGuess(self,playerchoice):
         '''This ask the user to put in a 1 character
         guess into the code and stores that character
@@ -15,9 +15,13 @@ class Player:
         return playerchoice.lower()
         #needs to be limited to 1 letter
 
-    def _past_guess(self):
+    def _past_guess(self,oldguess):
         '''This list all the previous inputs that was 
         made by the player, and makes them unable to 
         use them going forward in the game.'''
         #need to be a list
+        for letter in range(len(self._past_guess)):
+            if(oldguess == self._past_guess[letter]):
+                print('You have previously guessed this, try again.')
         return self._pastguess.append
+        

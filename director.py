@@ -13,7 +13,7 @@ class Director:
 
     def __init__(self):
         '''create new variables'''
-        self._guess_list = []
+        self._correct_guess = True
         self._lives = -1
         self._jumper = Jumper()
         self._dictionary = Dictionary()
@@ -36,8 +36,11 @@ class Director:
     def _update_game(self):
         ''' Get new values from input user
         '''
-        self._dictionary.check_guess()
-        self._jumper.update_lives()
+        self._correct_guess = self._dictionary.check_guess()
+        if (self._correct_guess == False):
+            self._jumper.update_lives()
+        else:
+            pass
 
     def _end_game(self):
         ''' Decide whether the game is over according to # of lives

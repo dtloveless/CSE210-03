@@ -5,7 +5,7 @@ class Player:
         self._past_guess()'''
         self._pastguess=[]
     
-
+    
     def _playerGuess(self,playerchoice):
         '''This ask the user to put in a 1 character
         guess into the code and stores that character

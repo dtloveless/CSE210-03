@@ -1,6 +1,6 @@
 from player import Player
 from dictionary import Dictionary
-from parachute import p
+from jumper import Jumper
 
 '''
     File: director.py
@@ -12,32 +12,38 @@ class Director:
 
     def __init__(self):
         '''create new variables'''
-        # self._pastGuesses = []
-        # self._jumper = Jumper()
-        # self._dictionary = Dictionary()
-        # self._player = Player()
+        self._guess_list = []
+        self._lives = -1
+        self._jumper = Jumper()
+        self._dictionary = Dictionary()
+        self._player = Player()
         pass
 
     def start_game(self):
-        '''while loop for playing the game'''
+        ''' Play the game while there are lives available
+        '''
         while self._end_game():
             self._display_game()
             self._update_game()
 
     def _display_game(self):
-        '''beginning layout of the game'''
-        # dictionary.displayUnderscores()
-        # jumper.displayChute()
-
-        pass
+        ''' Display layout of the game with the word and parachute
+        '''
+        self._dictionary.displayUnderscores()
+        self._jumper.displayChute()
 
     def _update_game(self):
-        '''get new values'''
-        # dictionary.checkGuess()
-        # jumper.update_lives()
+        ''' Get new values from input user
+        '''
+        self._dictionary.checkGuess()
+        self._jumper.update_lives()
         pass
 
     def _end_game(self):
-        '''decide whether the game is over'''
-        # call module 
-        return False
+        ''' Decide whether the game is over according to # of lives
+        '''
+        self._lives = self._jumper.get_lives()
+        if (self._lives == 0):
+            return True
+        else:
+            return False

@@ -3,7 +3,6 @@ class Player:
     def __init__(self):
        """ self._playerGuess()
         self._past_guess()"""
-        pass
     
 
     def _playerGuess(self,playerchoice):

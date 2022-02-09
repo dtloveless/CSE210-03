@@ -49,11 +49,3 @@ class Dictionary:
         for letter in range(len(self._current_word)):
             if(playerGuess == self._current_word[letter]):
                 self.wordDisplay[letter] = playerGuess
-
-
-
-test = Dictionary()
-print(test.get_word())
-test.display_word()
-test.update_word_display('a')
-test.display_word()

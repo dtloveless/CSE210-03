@@ -36,7 +36,7 @@ class Director:
     def _update_game(self):
         ''' Get new values from input user
         '''
-        self._dictionary.checkGuess()
+        self._dictionary.check_guess()
         self._jumper.update_lives()
 
     def _end_game(self):

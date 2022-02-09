@@ -1,6 +1,6 @@
 from player import Player
 from dictionary import Dictionary
-from parachute import p
+from jumper import Jumper
 
 '''
     File: director.py
@@ -12,7 +12,7 @@ class Director:
 
     def __init__(self):
         '''create new variables'''
-        # self._pastGuesses = []
+        # self._past_guess = []
         # self._jumper = Jumper()
         # self._dictionary = Dictionary()
         # self._player = Player()

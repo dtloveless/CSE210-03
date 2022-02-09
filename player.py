@@ -1,3 +1,10 @@
+'''
+    File: player.py
+    Author: Darcy Merilan
+    Description: 
+'''
+
+
 class Player:
 
     def __init__(self):

@@ -14,6 +14,11 @@ class Dictionary:
         words = ['vanish','health','parsimonious','support','kettle','beef','ajar','curious','imagine','shop']
         self._current_word = random.choice(words)
 
+        # fill up the word display with underscores at first
+        self.wordDisplay = []
+        for x in range(len(self._current_word)):
+            self.wordDisplay.append('_')
+
     def get_word(self):
         '''
         Returns the current word
@@ -38,3 +43,24 @@ class Dictionary:
             print('_ ', end= '')
         print('\n') #get an endline after the underscores finish printing
 
+    def display_word(self):
+        for letter in range(len(self._current_word)):
+            print(f"{self.wordDisplay[letter]} ", end='')
+
+    def update_word_display(self, playerGuess):
+        print(f"player Guess: {playerGuess}  Current Word: {self._current_word}")
+        print("entering compare loop:")
+        for letter in range(len(self._current_word)):
+            print(f"player Guess: {playerGuess}  Current Letter: {self._current_word[letter]}")
+            if(playerGuess == self._current_word[letter]):
+                self.wordDisplay[letter] = playerGuess
+                print(f"wordDisplay = {self.wordDisplay}")
+
+
+
+
+test = Dictionary()
+print(test.get_word())
+test.display_word()
+test.update_word_display('a')
+test.display_word()

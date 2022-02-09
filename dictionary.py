@@ -35,32 +35,17 @@ class Dictionary:
                 return True
         return False
 
-    def display_underscores(self):
-        '''
-        displays underscores for each letter in the current word
-        '''
-        for x in range(len(self._current_word)):
-            print('_ ', end= '')
-        print('\n') #get an endline after the underscores finish printing
-
     def display_word(self):
+        '''
+        displays the underscores and letters of the current word 
+        '''
         for letter in range(len(self._current_word)):
             print(f"{self.wordDisplay[letter]} ", end='')
 
     def update_word_display(self, playerGuess):
-        print(f"player Guess: {playerGuess}  Current Word: {self._current_word}")
-        print("entering compare loop:")
+        '''
+        updates the word display with the player's guess
+        '''
         for letter in range(len(self._current_word)):
-            print(f"player Guess: {playerGuess}  Current Letter: {self._current_word[letter]}")
             if(playerGuess == self._current_word[letter]):
                 self.wordDisplay[letter] = playerGuess
-                print(f"wordDisplay = {self.wordDisplay}")
-
-
-
-
-test = Dictionary()
-print(test.get_word())
-test.display_word()
-test.update_word_display('a')
-test.display_word()

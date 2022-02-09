@@ -30,8 +30,8 @@ class Director:
     def _display_game(self):
         ''' Display layout of the game with the word and parachute
         '''
-        self._dictionary.displayUnderscores()
-        self._jumper.displayChute()
+        self._dictionary.display_word()
+        self._jumper.display_chute()
 
     def _update_game(self):
         ''' Get new values from input user

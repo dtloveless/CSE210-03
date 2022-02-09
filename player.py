@@ -15,7 +15,7 @@ class Player:
         return pc
         #needs to be limited to 1 letter
 
-    def _past_guess():
+    def _past_guess(self):
         '''This list all the previous inputs that was 
         made by the player, and makes them unable to 
         use them going forward in the game.'''

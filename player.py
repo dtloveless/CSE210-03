@@ -1,8 +1,8 @@
 class Player:
 
     def __init__(self):
-        self._playerGuess()
-        self._past_guess()
+       """ self._playerGuess()
+        self._past_guess()"""
     
 
     def _playerGuess(self,playerchoice):
@@ -14,11 +14,12 @@ class Player:
         return pc
         #needs to be limited to 1 letter
 
-    def _past_guess():
+    def _past_guess(self):
         '''This list all the previous inputs that was 
         made by the player, and makes them unable to 
         use them going forward in the game.'''
         #need to be a list
-        oldguess = []
-        
-        pass
+        pc = []
+        for l in pc:
+            pc.append(l)
+        return pc

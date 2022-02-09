@@ -1,31 +1,43 @@
 from player import Player
 from dictionary import Dictionary
+from parachute import p
 
 '''
-    Authors: Daniel Loveless, Julie Cowley, 
-        Celeste Popoca, Darcy Merilan
+    File: director.py
+    Author: Celeste Popoca
+    Despcription: Contains the director class of the game and 
 '''
 
 class Director:
 
     def __init__(self):
-        # create new variables
+        '''create new variables'''
+        # self._pastGuesses = []
+        # self._jumper = Jumper()
+        # self._dictionary = Dictionary()
+        # self._player = Player()
         pass
 
     def start_game(self):
-        # while loop for playing the game
+        '''while loop for playing the game'''
         while self._end_game():
             self._display_game()
             self._update_game()
 
     def _display_game(self):
-        # beginning layout of the game
+        '''beginning layout of the game'''
+        # dictionary.displayUnderscores()
+        # jumper.displayChute()
+
         pass
 
     def _update_game(self):
-        # get new values
+        '''get new values'''
+        # dictionary.checkGuess()
+        # jumper.update_lives()
         pass
 
     def _end_game(self):
-        # decide whether the game is over
+        '''decide whether the game is over'''
+        # call module 
         return False

@@ -56,4 +56,4 @@ class Jumper():
     def get_lives(self):
         ''' Passes the number of lives remaining to caller
         '''
-        return self._lives_used
+        return 4 - self._lives_used

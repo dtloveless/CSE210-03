@@ -12,7 +12,8 @@ from jumper import Jumper
 class Director:
 
     def __init__(self):
-        '''create new variables'''
+        ''' Create new variables for the class.
+        '''
         self._correct_guess = True
         self._lives = -1
         self._jumper = Jumper()

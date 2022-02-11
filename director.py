@@ -25,7 +25,7 @@ class Director:
     def start_game(self):
         ''' Play the game while there are lives available
         '''
-        while self._end_game():
+        while ~self._end_game():
             self._display_game()
             self._update_game()
         self._display_game()

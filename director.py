@@ -28,6 +28,7 @@ class Director:
         while not self._end_game():
             self._display_game()
             self._update_game()
+        self._display_game()
 
     def _display_game(self):
         ''' Display layout of the game with the word and parachute

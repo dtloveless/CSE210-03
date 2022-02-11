@@ -25,7 +25,7 @@ class Dictionary:
         '''
         return self._current_word
 
-    def check_guess(self, playerGuess):
+    def in_word(self, playerGuess):
         '''
         recieves a letter 
         returns true if the letter is in the current word, false otherwise

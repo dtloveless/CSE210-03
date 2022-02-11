@@ -37,11 +37,11 @@ class Director:
     def _update_game(self):
         ''' Get new values from input user
         '''
-        self._player._playerGuess()
-        self._dictionary.update_word_display(self._player._playerGuess)
-        self._correct_guess = self._dictionary.check_guess(self._player._playerGuess)
-        if (self._correct_guess == False):
-            self._jumper.update_lives(self._player._pastguess)
+        self._player.get_player_guess()
+        self._dictionary.update_word_display(self._player._player_guess)
+
+        if (not self._dictionary.in_word(self._player._player_guess)):
+            self._jumper.update_lives(self._player._pastguesses)
         else:
             pass
 

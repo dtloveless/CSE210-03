@@ -14,6 +14,7 @@ class Director:
     def __init__(self):
         ''' Create new variables for the class.
         '''
+        self.wrong_guesses = 0
         self._correct_guess = True
         self._lives = -1
         self._jumper = Jumper()
@@ -41,7 +42,8 @@ class Director:
         self._dictionary.update_word_display(self._player._player_guess)
 
         if (not self._dictionary.in_word(self._player._player_guess)):
-            self._jumper.update_lives(self._player._pastguesses)
+            self.wrong_guesses += 1
+            self._jumper.update_lives(self.wrong_guesses)
         else:
             pass
 

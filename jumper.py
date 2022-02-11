@@ -21,12 +21,12 @@ class Jumper():
         ]
         self._lives_used = 0
     
-    def update_lives(self, guesses_used):
+    def update_lives(self, num_wrong_guesses):
         """Updates local value for lives used based on length of guesses list.
         Args:
             guesses_used ([list]): list of incorrect guesses attempted by player
         """
-        self._lives_used = guesses_used
+        self._lives_used = num_wrong_guesses
         
     def display_chute(self):
         """Displays ASCII graphic for jumper w/parachute according to how many
@@ -52,3 +52,8 @@ class Jumper():
             for line in self.__parachute__:
                 print(line)
         print('\n^^^^^^^')
+
+    def get_lives(self):
+        ''' Passes the number of lives remaining to caller
+        '''
+        return self._lives_used

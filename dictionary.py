@@ -41,6 +41,7 @@ class Dictionary:
         '''
         for letter in range(len(self._current_word)):
             print(f"{self.wordDisplay[letter]} ", end='')
+        print()
 
     def update_word_display(self, playerGuess):
         '''

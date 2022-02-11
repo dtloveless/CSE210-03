@@ -26,7 +26,7 @@ class Jumper():
         Args:
             guesses_used ([list]): list of incorrect guesses attempted by player
         """
-        self._lives_used = len(guesses_used)
+        self._lives_used = guesses_used
         
     def display_chute(self):
         """Displays ASCII graphic for jumper w/parachute according to how many

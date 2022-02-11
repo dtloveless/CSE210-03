@@ -1,7 +1,8 @@
 '''
     File: player.py
     Author: Darcy Merilan
-    Description: 
+    Description:  The player class recieves the players guess and than
+    storesthe past guesses from the player into a list
 '''
 
 

@@ -25,7 +25,7 @@ class Director:
     def start_game(self):
         ''' Play the game while there are lives available
         '''
-        while self._end_game():
+        while not self._end_game():
             self._display_game()
             self._update_game()
 
@@ -52,6 +52,9 @@ class Director:
         '''
         self._lives = self._jumper.get_lives()
         if (self._lives == 0):
+            self._jumper.display_chute()
+            return True
+        elif ('_' not in self._dictionary.wordDisplay):
             return True
         else:
             return False

@@ -53,7 +53,6 @@ class Director:
         '''
         self._lives = self._jumper.get_lives()
         if (self._lives == 0):
-            self._jumper.display_chute()
             return True
         elif ('_' not in self._dictionary.wordDisplay):
             return True
